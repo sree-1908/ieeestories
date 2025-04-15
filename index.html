@@ -21,7 +21,7 @@
         }
 
         header h1 {
-            font-size: 3em;
+            font-size: 2.5em;
             margin: 0;
         }
 
@@ -52,7 +52,7 @@
         }
 
         .card h3 {
-            font-size: 1.5em;
+            font-size: 1.3em;
             margin-bottom: 10px;
         }
 
@@ -101,6 +101,50 @@
             margin: 0;
         }
 
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 2em;
+            }
+
+            .card-container {
+                grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+            }
+
+            .card h3 {
+                font-size: 1.2em;
+            }
+
+            .card p {
+                font-size: 0.9em;
+            }
+
+            footer p {
+                font-size: 0.9em;
+            }
+        }
+
+        @media (max-width: 480px) {
+            header h1 {
+                font-size: 1.8em;
+            }
+
+            .card-container {
+                grid-template-columns: 1fr;
+            }
+
+            .card h3 {
+                font-size: 1.1em;
+            }
+
+            .card p {
+                font-size: 0.85em;
+            }
+
+            footer p {
+                font-size: 0.8em;
+            }
+        }
     </style>
 </head>
 <body>
@@ -111,12 +155,11 @@
     <div class="card-container">
         <!-- Card 1: Sarang S. Shaikh -->
         <div class="card">
-           
             <div class="card-content">
                 <h3>Sarang S. Shaikh</h3>
                 <p>From shy student to global IEEE speaker and leader.</p>
                 <p class="more-text">
-                    Sarang joined IEEE as a student member and began with small events. He organized tech talks, led his student branch, and represented India at global IEEE summits. IEEE helped him overcome stage fear, build leadership skills, and become an international speaker. 
+                    Sarang joined IEEE as a student member and began with small events. He organized tech talks, led his student branch, and represented India at global IEEE summits. IEEE helped him overcome stage fear, build leadership skills, and become an international speaker.
                     👉 “IEEE transformed me from a backbencher to a stage speaker.”
                 </p>
             </div>
@@ -124,10 +167,9 @@
                 <a onclick="toggleText(this)">Read More</a>
             </div>
         </div>
-    
+
         <!-- Card 2: EPICS in IEEE – Cameroon Project -->
         <div class="card">
-            
             <div class="card-content">
                 <h3>EPICS in IEEE – Solar-Powered School</h3>
                 <p>Students brought light and clean water to rural Cameroon.</p>
@@ -140,10 +182,9 @@
                 <a onclick="toggleText(this)">Read More</a>
             </div>
         </div>
-    
+
         <!-- Card 3: Sudhanshu from Bihar -->
         <div class="card">
-           
             <div class="card-content">
                 <h3>Sudhanshu</h3>
                 <p>From rural Bihar to publishing with IEEE and pursuing a PhD abroad.</p>
@@ -156,10 +197,9 @@
                 <a onclick="toggleText(this)">Read More</a>
             </div>
         </div>
-    
+
         <!-- Card 4: Anusha Ramesh (WIE) -->
         <div class="card">
-            
             <div class="card-content">
                 <h3>Anusha Ramesh</h3>
                 <p>IEEE WIE gave her the strength to lead in male-dominated spaces.</p>
@@ -172,10 +212,9 @@
                 <a onclick="toggleText(this)">Read More</a>
             </div>
         </div>
-    
+
         <!-- Card 5: Power Electronics Hackathon -->
         <div class="card">
-            
             <div class="card-content">
                 <h3>IEEE PES Hackathon Teams</h3>
                 <p>Students built smart meters and got hired on the spot.</p>
@@ -189,7 +228,6 @@
             </div>
         </div>
     </div>
-    
 
     <footer>
         <p>&copy; 2025 IEEE Member Stories. All Rights Reserved.</p>
